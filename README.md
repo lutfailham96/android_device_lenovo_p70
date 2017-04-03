@@ -1,4 +1,4 @@
-TWRP device tree for Lenovo P70-A
+## TWRP device tree for Lenovo P70-A
 
 Add to `.repo/local_manifests/p70.xml`:
 
