@@ -1,0 +1,23 @@
+# mount point 		fstype 	device1 				device2 					flags
+/boot 				emmc 	/dev/block/mmcblk0p7 								flags=display="Boot";backup=1;flashimg=1
+/cache 				ext4 	/dev/block/mmcblk0p17 								flags=display="Cache";backup=1;wipeingui;wipeduringfactoryreset
+/expdb 				emmc 	/dev/block/mmcblk0p12 								flags=display="Expdb";backup=1
+/flashinfo 			emmc 	/dev/block/mmcblk0p19 								flags=display="Flash Info";backup=1
+/lk 				emmc 	/dev/block/mmcblk0p6 								flags=display="Uboot";backup=1;flashimg=1
+/logo 				emmc 	/dev/block/mmcblk0p11 								flags=display="Logo";backup=1;flashimg=1
+/metadata 			emmc 	/dev/block/mmcblk0p15 								flags=display="Meta Data";backup=1
+/nvram 				emmc 	/dev/block/mmcblk0p2 								flags=display="Nvram";backup=1;flashimg=1
+/para 				emmc 	/dev/block/mmcblk0p10 								flags=display="Para";backup=1
+/proinfo 			emmc 	/dev/block/mmcblk0p1 								flags=display="Proinfo";backup=1
+/protect_f 			ext4 	/dev/block/mmcblk0p3 								flags=display="Protect";backup=1
+/protect_s 			ext4 	/dev/block/mmcblk0p4 								flags=subpartitionof=/protect_f;backup=1
+/recovery 			emmc 	/dev/block/mmcblk0p8 								flags=display="Recovery";backup=1;flashimg=1
+/seccfg 			emmc 	/dev/block/mmcblk0p5 								flags=display="Seccfg";backup=1
+/secro 				emmc 	/dev/block/mmcblk0p9 								flags=display="Secro";backup=1
+/system 			ext4 	/dev/block/mmcblk0p16 								flags=display="System";backup=1;wipeingui
+/system_image 		emmc 	/dev/block/mmcblk0p16 								flags=display="System";backup=1;flashimg=1
+/tee1 				emmc 	/dev/block/mmcblk0p13 								flags=display="Tee";backup=1
+/tee2 				emmc 	/dev/block/mmcblk0p14 								flags=subpartitionof=/tee1;backup=1
+/data 				ext4 	/dev/block/mmcblk0p18 								flags=backup=1;wipeingui;wipeduringfactoryreset
+/external_sd 		auto 	/dev/block/mmcblk1p1 	/dev/block/mmcblk1 			flags=display="External SD-card";storage;wipeingui;removable;backup=0
+/usbotg 			auto 	/dev/block/sda1 		/dev/block/sda 				flags=display="USB-OTG";storage;wipeingui;removable;backup=0
