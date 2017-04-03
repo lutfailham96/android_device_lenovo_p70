@@ -16,5 +16,5 @@ To build:
 ```sh
 . build/envsetup.sh
 lunch omni_p70-eng
-make -j5 recoveryimage
+make -j 5 recoveryimage
 ```
